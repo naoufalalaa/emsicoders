@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.0/css/uikit.min.css" integrity="sha512-FDVGrjPfy5wUN0KpoBJLx+gTCSJhf3N+AhUX2U57OeKctPifAbT55+CcB21v17r12vnEumZVxu+18APLGCcg2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.14.0/js/uikit.min.js" integrity="sha512-nCUjCgCQhCKrOH9CRern20PoBJhFxcaxrAiLrzBznfPzViWKQVCRslBDzHML3vf1oQtdGV7FnJolA9mdujvh8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>EmsiCoders</title>
+</head>
+<body>
+    <div class="na-navbar">
+        <div>
+            <svg height="41" viewBox="0 0 251 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.276 17.88C1.452 17.832 2.316 17.58 2.868 17.124C3.42 16.644 3.696 15.972 3.696 15.108C3.696 14.46 3.576 13.176 3.336 11.256C3.312 11.064 3.24 10.452 3.12 9.42C3 8.364 2.94 7.416 2.94 6.576C2.94 4.536 3.564 2.952 4.812 1.824C6.06 0.671999 7.728 0.0959988 9.816 0.0959988H12.408V5.136H11.004C10.236 5.136 9.684 5.304 9.348 5.64C9.012 5.976 8.844 6.492 8.844 7.188C8.844 7.716 8.94 8.916 9.132 10.788C9.348 13.116 9.456 14.64 9.456 15.36C9.456 16.68 9.132 17.772 8.484 18.636C7.86 19.5 6.9 20.052 5.604 20.292V20.364C6.9 20.628 7.86 21.192 8.484 22.056C9.132 22.896 9.456 23.988 9.456 25.332C9.456 26.052 9.348 27.576 9.132 29.904C8.94 31.728 8.844 32.916 8.844 33.468C8.844 34.164 9.012 34.68 9.348 35.016C9.684 35.376 10.236 35.556 11.004 35.556H12.408V40.596H9.816C7.728 40.596 6.06 40.02 4.812 38.868C3.564 37.74 2.94 36.144 2.94 34.08C2.94 33.24 3 32.304 3.12 31.272C3.24 30.216 3.312 29.592 3.336 29.4C3.576 27.48 3.696 26.196 3.696 25.548C3.696 24.732 3.42 24.084 2.868 23.604C2.316 23.1 1.452 22.824 0.276 22.776V17.88ZM23.3528 12.66V17.772H31.5968V22.524H23.3528V28.068H32.6768V33H17.1968V7.728H32.6768V12.66H23.3528ZM62.3054 12.696C64.8014 12.696 66.7814 13.452 68.2454 14.964C69.7334 16.476 70.4774 18.576 70.4774 21.264V33H64.3574V22.092C64.3574 20.796 64.0094 19.8 63.3134 19.104C62.6414 18.384 61.7054 18.024 60.5054 18.024C59.3054 18.024 58.3574 18.384 57.6614 19.104C56.9894 19.8 56.6534 20.796 56.6534 22.092V33H50.5334V22.092C50.5334 20.796 50.1854 19.8 49.4894 19.104C48.8174 18.384 47.8814 18.024 46.6814 18.024C45.4814 18.024 44.5334 18.384 43.8374 19.104C43.1654 19.8 42.8294 20.796 42.8294 22.092V33H36.6734V12.912H42.8294V15.432C43.4534 14.592 44.2694 13.932 45.2774 13.452C46.2854 12.948 47.4254 12.696 48.6974 12.696C50.2094 12.696 51.5534 13.02 52.7294 13.668C53.9294 14.316 54.8654 15.24 55.5374 16.44C56.2334 15.336 57.1814 14.436 58.3814 13.74C59.5814 13.044 60.8894 12.696 62.3054 12.696ZM82.9548 33.288C81.2028 33.288 79.6428 32.988 78.2748 32.388C76.9068 31.788 75.8268 30.972 75.0348 29.94C74.2428 28.884 73.7988 27.708 73.7028 26.412H79.7868C79.8588 27.108 80.1828 27.672 80.7588 28.104C81.3348 28.536 82.0428 28.752 82.8828 28.752C83.6508 28.752 84.2388 28.608 84.6468 28.32C85.0788 28.008 85.2948 27.612 85.2948 27.132C85.2948 26.556 84.9948 26.136 84.3948 25.872C83.7948 25.584 82.8228 25.272 81.4788 24.936C80.0388 24.6 78.8388 24.252 77.8788 23.892C76.9188 23.508 76.0908 22.92 75.3948 22.128C74.6988 21.312 74.3508 20.22 74.3508 18.852C74.3508 17.7 74.6628 16.656 75.2868 15.72C75.9348 14.76 76.8708 14.004 78.0948 13.452C79.3428 12.9 80.8188 12.624 82.5228 12.624C85.0428 12.624 87.0228 13.248 88.4628 14.496C89.9268 15.744 90.7668 17.4 90.9828 19.464H85.2948C85.1988 18.768 84.8868 18.216 84.3588 17.808C83.8548 17.4 83.1828 17.196 82.3428 17.196C81.6228 17.196 81.0708 17.34 80.6868 17.628C80.3028 17.892 80.1108 18.264 80.1108 18.744C80.1108 19.32 80.4108 19.752 81.0108 20.04C81.6348 20.328 82.5948 20.616 83.8908 20.904C85.3788 21.288 86.5908 21.672 87.5268 22.056C88.4628 22.416 89.2788 23.016 89.9748 23.856C90.6948 24.672 91.0668 25.776 91.0908 27.168C91.0908 28.344 90.7548 29.4 90.0828 30.336C89.4348 31.248 88.4868 31.968 87.2388 32.496C86.0148 33.024 84.5868 33.288 82.9548 33.288ZM97.953 10.824C96.873 10.824 95.985 10.512 95.289 9.888C94.617 9.24 94.281 8.448 94.281 7.512C94.281 6.552 94.617 5.76 95.289 5.136C95.985 4.488 96.873 4.164 97.953 4.164C99.009 4.164 99.873 4.488 100.545 5.136C101.241 5.76 101.589 6.552 101.589 7.512C101.589 8.448 101.241 9.24 100.545 9.888C99.873 10.512 99.009 10.824 97.953 10.824ZM101.013 12.912V33H94.857V12.912H101.013ZM250.364 22.776C249.188 22.824 248.324 23.1 247.772 23.604C247.22 24.084 246.944 24.732 246.944 25.548C246.944 26.196 247.064 27.48 247.304 29.4C247.328 29.592 247.4 30.216 247.52 31.272C247.64 32.304 247.7 33.24 247.7 34.08C247.7 36.144 247.076 37.74 245.828 38.868C244.58 40.02 242.912 40.596 240.824 40.596H238.232V35.556H239.636C240.404 35.556 240.956 35.376 241.292 35.016C241.628 34.68 241.796 34.164 241.796 33.468C241.796 32.916 241.7 31.728 241.508 29.904C241.292 27.576 241.184 26.052 241.184 25.332C241.184 23.988 241.496 22.896 242.12 22.056C242.768 21.192 243.74 20.628 245.036 20.364V20.292C243.74 20.052 242.768 19.5 242.12 18.636C241.496 17.772 241.184 16.68 241.184 15.36C241.184 14.64 241.292 13.116 241.508 10.788C241.7 8.916 241.796 7.716 241.796 7.188C241.796 6.492 241.628 5.976 241.292 5.64C240.956 5.304 240.404 5.136 239.636 5.136H238.232V0.0959988H240.824C242.912 0.0959988 244.58 0.671999 245.828 1.824C247.076 2.952 247.7 4.536 247.7 6.576C247.7 7.416 247.64 8.364 247.52 9.42C247.4 10.452 247.328 11.064 247.304 11.256C247.064 13.176 246.944 14.46 246.944 15.108C246.944 15.972 247.22 16.644 247.772 17.124C248.324 17.58 249.188 17.832 250.364 17.88V22.776Z" fill="white"/>
+                <path d="M104.43 20.328C104.43 17.832 104.97 15.612 106.05 13.668C107.13 11.7 108.63 10.176 110.55 9.096C112.494 7.992 114.69 7.44 117.138 7.44C120.138 7.44 122.706 8.232 124.842 9.816C126.978 11.4 128.406 13.56 129.126 16.296H122.358C121.854 15.24 121.134 14.436 120.198 13.884C119.286 13.332 118.242 13.056 117.066 13.056C115.17 13.056 113.634 13.716 112.458 15.036C111.282 16.356 110.694 18.12 110.694 20.328C110.694 22.536 111.282 24.3 112.458 25.62C113.634 26.94 115.17 27.6 117.066 27.6C118.242 27.6 119.286 27.324 120.198 26.772C121.134 26.22 121.854 25.416 122.358 24.36H129.126C128.406 27.096 126.978 29.256 124.842 30.84C122.706 32.4 120.138 33.18 117.138 33.18C114.69 33.18 112.494 32.64 110.55 31.56C108.63 30.456 107.13 28.932 106.05 26.988C104.97 25.044 104.43 22.824 104.43 20.328ZM142.04 33.288C140.072 33.288 138.296 32.868 136.712 32.028C135.152 31.188 133.916 29.988 133.004 28.428C132.116 26.868 131.672 25.044 131.672 22.956C131.672 20.892 132.128 19.08 133.04 17.52C133.952 15.936 135.2 14.724 136.784 13.884C138.368 13.044 140.144 12.624 142.112 12.624C144.08 12.624 145.856 13.044 147.44 13.884C149.024 14.724 150.272 15.936 151.184 17.52C152.096 19.08 152.552 20.892 152.552 22.956C152.552 25.02 152.084 26.844 151.148 28.428C150.236 29.988 148.976 31.188 147.368 32.028C145.784 32.868 144.008 33.288 142.04 33.288ZM142.04 27.96C143.216 27.96 144.212 27.528 145.028 26.664C145.868 25.8 146.288 24.564 146.288 22.956C146.288 21.348 145.88 20.112 145.064 19.248C144.272 18.384 143.288 17.952 142.112 17.952C140.912 17.952 139.916 18.384 139.124 19.248C138.332 20.088 137.936 21.324 137.936 22.956C137.936 24.564 138.32 25.8 139.088 26.664C139.88 27.528 140.864 27.96 142.04 27.96ZM154.594 22.92C154.594 20.856 154.978 19.044 155.746 17.484C156.538 15.924 157.606 14.724 158.95 13.884C160.294 13.044 161.794 12.624 163.45 12.624C164.77 12.624 165.97 12.9 167.05 13.452C168.154 14.004 169.018 14.748 169.642 15.684V6.36H175.798V33H169.642V30.12C169.066 31.08 168.238 31.848 167.158 32.424C166.102 33 164.866 33.288 163.45 33.288C161.794 33.288 160.294 32.868 158.95 32.028C157.606 31.164 156.538 29.952 155.746 28.392C154.978 26.808 154.594 24.984 154.594 22.92ZM169.642 22.956C169.642 21.42 169.21 20.208 168.346 19.32C167.506 18.432 166.474 17.988 165.25 17.988C164.026 17.988 162.982 18.432 162.118 19.32C161.278 20.184 160.858 21.384 160.858 22.92C160.858 24.456 161.278 25.68 162.118 26.592C162.982 27.48 164.026 27.924 165.25 27.924C166.474 27.924 167.506 27.48 168.346 26.592C169.21 25.704 169.642 24.492 169.642 22.956ZM199.188 22.632C199.188 23.208 199.152 23.808 199.08 24.432H185.148C185.244 25.68 185.64 26.64 186.336 27.312C187.056 27.96 187.932 28.284 188.964 28.284C190.5 28.284 191.568 27.636 192.168 26.34H198.72C198.384 27.66 197.772 28.848 196.884 29.904C196.02 30.96 194.928 31.788 193.608 32.388C192.288 32.988 190.812 33.288 189.18 33.288C187.212 33.288 185.46 32.868 183.924 32.028C182.388 31.188 181.188 29.988 180.324 28.428C179.46 26.868 179.028 25.044 179.028 22.956C179.028 20.868 179.448 19.044 180.288 17.484C181.152 15.924 182.352 14.724 183.888 13.884C185.424 13.044 187.188 12.624 189.18 12.624C191.124 12.624 192.852 13.032 194.364 13.848C195.876 14.664 197.052 15.828 197.892 17.34C198.756 18.852 199.188 20.616 199.188 22.632ZM192.888 21.012C192.888 19.956 192.528 19.116 191.808 18.492C191.088 17.868 190.188 17.556 189.108 17.556C188.076 17.556 187.2 17.856 186.48 18.456C185.784 19.056 185.352 19.908 185.184 21.012H192.888ZM208.591 16.26C209.311 15.156 210.211 14.292 211.291 13.668C212.371 13.02 213.571 12.696 214.891 12.696V19.212H213.199C211.663 19.212 210.511 19.548 209.743 20.22C208.975 20.868 208.591 22.02 208.591 23.676V33H202.435V12.912H208.591V16.26ZM226.006 33.288C224.254 33.288 222.694 32.988 221.326 32.388C219.958 31.788 218.878 30.972 218.086 29.94C217.294 28.884 216.85 27.708 216.754 26.412H222.838C222.91 27.108 223.234 27.672 223.81 28.104C224.386 28.536 225.094 28.752 225.934 28.752C226.702 28.752 227.29 28.608 227.698 28.32C228.13 28.008 228.346 27.612 228.346 27.132C228.346 26.556 228.046 26.136 227.446 25.872C226.846 25.584 225.874 25.272 224.53 24.936C223.09 24.6 221.89 24.252 220.93 23.892C219.97 23.508 219.142 22.92 218.446 22.128C217.75 21.312 217.402 20.22 217.402 18.852C217.402 17.7 217.714 16.656 218.338 15.72C218.986 14.76 219.922 14.004 221.146 13.452C222.394 12.9 223.87 12.624 225.574 12.624C228.094 12.624 230.074 13.248 231.514 14.496C232.978 15.744 233.818 17.4 234.034 19.464H228.346C228.25 18.768 227.938 18.216 227.41 17.808C226.906 17.4 226.234 17.196 225.394 17.196C224.674 17.196 224.122 17.34 223.738 17.628C223.354 17.892 223.162 18.264 223.162 18.744C223.162 19.32 223.462 19.752 224.062 20.04C224.686 20.328 225.646 20.616 226.942 20.904C228.43 21.288 229.642 21.672 230.578 22.056C231.514 22.416 232.33 23.016 233.026 23.856C233.746 24.672 234.118 25.776 234.142 27.168C234.142 28.344 233.806 29.4 233.134 30.336C232.486 31.248 231.538 31.968 230.29 32.496C229.066 33.024 227.638 33.288 226.006 33.288Z" fill="#8CEFE9"/>
+            </svg>                
+        </div>
+        <div id="nav-links" class="na-links">
+            <a href="index.php">Learn</a>
+            <a href="about.php">About Us</a>
+            <a href="contact.php">Members</a>
+            <a href="login.php">Projects</a>
+            <a href="login.php">Our System</a>
+            <a href="login.php">Events</a>
+        </div>
+        <div class="na-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+
+    <div class="section-head">
+        <!--  upper part  -->
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="card p-3 text-left">
+                    <div class="card-body">
+                        <h3 class="card-title">Location de voitures</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Précisez les dates et lieu de rdv</h6>
+                        <p class="card-text">Vous pouvez choisir les dates de location et lieu où vous pouvez rendre la voiture.</p>
+                        <form class="row g-2">
+                            <div class="col-12 mb-3">
+                              <label for="inputAddress2" onclick="hide()" class="form-label">Même lieu de retour <i class="fa-solid fa-angle-down"></i></label>
+                              <div id="location" class="form-group has-search">
+                                <span class="fa-solid fa-street-view form-control-feedback">
+                                </span>
+                                <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <input type="date" class="form-control" id="DateField">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <input type="date" class="form-control" id="DateField2">
+                            </div>
+                            <div>
+                              <button type="submit" class="btn btn-primary w-100">RECHERCHER</button>
+                            </div>
+                            <div class="age">
+                                <span><small><strong>AGE DU CONDUCTEUR : </strong></small></span>
+                                <span class="age-active"><small>25 - 60 ans</small></span>
+                                <span><small>AUTRE</small></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-content mt-5" align="center">
+
+        <div class="w-75 row row-cols-1 text-start row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/img/car.jpg" class="img-fluid rounded-start align-middle" alt="car">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Renault Megane</h5>
+                        <div class="infos"> 
+                            <span><i class="fa-solid fa-chair"></i> 4</span>
+                            <span><i class="fa-solid fa-car"></i> 5</span>
+                            <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                        </div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/img/car.jpg" class="img-fluid rounded-start align-middle" alt="car">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Renault Megane</h5>
+                        <div class="infos"> 
+                            <span><i class="fa-solid fa-chair"></i> 4</span>
+                            <span><i class="fa-solid fa-car"></i> 5</span>
+                            <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                        </div>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/car.jpg" class="img-fluid rounded-start align-middle" alt="car">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Renault Megane</h5>
+                            <div class="infos"> 
+                                <span><i class="fa-solid fa-chair"></i> 4</span>
+                                <span><i class="fa-solid fa-car"></i> 5</span>
+                                <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                            </div>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/car.jpg" class="img-fluid rounded-start align-middle" alt="car">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">Renault Megane</h5>
+                            <div class="infos"> 
+                                <span><i class="fa-solid fa-chair"></i> 4</span>
+                                <span><i class="fa-solid fa-car"></i> 5</span>
+                                <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                            </div>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+
+
+    <hr>
+<div align="center">
+
+    <div class="uk-width-2-3@s uk-child-width-1-2@s uk-child-width-1-3@m uk-text-left" uk-grid>
+        
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top uk-position-relative uk-visible-toggle uk-dark" tabindex="-1"  uk-slideshow>
+                    <ul class="uk-slideshow-items" uk-lightbox="animation: fade">
+                        <li>
+                            <a href="./assets/img/car.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/car.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/img/back.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/back.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="uk-slidenav-small uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-slidenav-small uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <div class="uk-card-body">
+                    <h5 class="uk-card-title">Renault Megane</h5>
+                    <div class="infos"> 
+                        <span><i class="fa-solid fa-chair"></i> 4</span>
+                        <span><i class="fa-solid fa-car"></i> 5</span>
+                        <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                    </div>
+                    <p class="uk-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div> 
+
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top uk-position-relative uk-visible-toggle uk-dark" tabindex="-1"  uk-slideshow>
+                    <ul class="uk-slideshow-items" uk-lightbox="animation: fade">
+                        <li>
+                            <a href="./assets/img/car.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/car.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/img/back.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/back.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="uk-slidenav-small uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-slidenav-small uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <div class="uk-card-body">
+                    <h5 class="uk-card-title">Renault Megane</h5>
+                    <div class="infos"> 
+                        <span><i class="fa-solid fa-chair"></i> 4</span>
+                        <span><i class="fa-solid fa-car"></i> 5</span>
+                        <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                    </div>
+                    <p class="uk-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top uk-position-relative uk-visible-toggle uk-dark" tabindex="-1"  uk-slideshow>
+                    <ul class="uk-slideshow-items" uk-lightbox="animation: fade">
+                        <li>
+                            <a href="./assets/img/car.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/car.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/img/back.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/back.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="uk-slidenav-small uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-slidenav-small uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <div class="uk-card-body">
+                    <h5 class="uk-card-title">Renault Megane</h5>
+                    <div class="infos"> 
+                        <span><i class="fa-solid fa-chair"></i> 4</span>
+                        <span><i class="fa-solid fa-car"></i> 5</span>
+                        <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                    </div>
+                    <p class="uk-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+         
+        <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top uk-position-relative uk-visible-toggle uk-dark" tabindex="-1"  uk-slideshow>
+                    <ul class="uk-slideshow-items" uk-lightbox="animation: fade">
+                        <li>
+                            <a href="./assets/img/car.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/car.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/img/back.jpg" data-caption="Megane Renault">
+                                <img src="./assets/img/back.jpg" uk-lightbox="animation: fade" width="1800" height="1200"  alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="uk-slidenav-small uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-slidenav-small uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                <div class="uk-card-body">
+                    <h5 class="uk-card-title">Renault Megane</h5>
+                    <div class="infos"> 
+                        <span><i class="fa-solid fa-chair"></i> 4</span>
+                        <span><i class="fa-solid fa-car"></i> 5</span>
+                        <span><i class="fa-solid fa-calendar-days"></i> 2022</span>
+                    </div>
+                    <p class="uk-card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="uk-card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+    <footer class="mt-5">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="assets/img/{EmsiCoders}.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.php">Learn</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="contact.php">Members</a></li>
+                            <li><a href="login.php">Projects</a></li>
+                            <li><a href="login.php">Our System</a></li>
+                            <li><a href="login.php">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.php">Learn</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="contact.php">Members</a></li>
+                            <li><a href="login.php">Projects</a></li>
+                            <li><a href="login.php">Our System</a></li>
+                            <li><a href="login.php">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    <script>document.getElementById('DateField').valueAsDate = new Date();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
